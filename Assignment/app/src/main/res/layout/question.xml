@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Question">
+<RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:layout_above="@id/buttonNext"
+
+    android:id="@+id/radioGroup"
+    android:gravity="center">
+    <RadioButton
+        android:id="@+id/answer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/answer2"
+        android:gravity="center"
+        android:text="Answer 1"
+        />
+    <RadioButton
+        android:id="@+id/answer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/answer3"
+        android:gravity="center"
+        android:text="Answer 2"
+        />
+    <RadioButton
+        android:id="@+id/answer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/answer4"
+        android:gravity="center"
+        android:text="Answer 3"
+        />
+    <RadioButton
+        android:id="@+id/answer4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:text="Answer 4"
+        />
+
+</RadioGroup>
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/radioGroup"
+        android:id="@+id/question"
+        android:layout_alignParentTop="true"
+        android:text="Question"
+        />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="Next" />
+
+
+</RelativeLayout>
